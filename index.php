@@ -59,7 +59,7 @@ if ($opcaoAniversariantes == 'hoje') {
     if ($aniversariantesAmanha) {
         sendMessage('Aniversariantes de amanhã (' . date("d/m", strtotime("+1 day")) . '): ' . implode(', ', $aniversariantesAmanha[0]));
     } else {
-        sendMessage('Ninguém faz aniversário amanhã (' . date("d/m", strtotime("+1 day")) . ').');
+        sendMessage('Ninguém fará aniversário amanhã (' . date("d/m", strtotime("+1 day")) . ').');
     }
 }
 
@@ -86,8 +86,16 @@ function sendMessage($message)
     curl_close($curl);
 
     // WhatsApp
+    // Vinícius
     $phone = '+556283156636';
     $apikey = '225716';
+
+    $url = 'https://api.callmebot.com/whatsapp.php?source=php&phone=' . $phone . '&text=' . urlencode($message) . '&apikey=' . $apikey;
+    file_get_contents($url);
+
+    // Fábio Siqueira
+    $phone = '+556292189216';
+    $apikey = '2769676';
 
     $url = 'https://api.callmebot.com/whatsapp.php?source=php&phone=' . $phone . '&text=' . urlencode($message) . '&apikey=' . $apikey;
     return file_get_contents($url);
