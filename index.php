@@ -26,7 +26,7 @@ $aniversarios = [
     "25/08" => ["Daniel Filho (Angelita)"],
     "28/08" => ["Maria Helena"],
     "30/08" => ["Rodrigo Almeida"],
-    "09/09" => ["Fabio Siqueira"],
+    "09/09" => ["Fábio Siqueira"],
     "18/09" => ["Dayane"],
     "09/12" => ["Ricardo"],
 ];
@@ -43,7 +43,7 @@ if ($opcaoAniversariantes == 'hoje') {
     }
     
     if ($aniversariantesHoje) {
-        sendMessage('Aniversariantes de hoje (' . date("d/m") . '): ' . implode(', ', $aniversariantesHoje[0]));
+        sendMessage('Aniversariante(s) de hoje (' . date("d/m") . '): ' . implode(', ', $aniversariantesHoje[0]));
     } else {
         sendMessage('Ninguém faz aniversário hoje (' . date("d/m") . ').');
     }
@@ -57,7 +57,7 @@ if ($opcaoAniversariantes == 'hoje') {
     }
 
     if ($aniversariantesAmanha) {
-        sendMessage('Aniversariantes de amanhã (' . date("d/m", strtotime("+1 day")) . '): ' . implode(', ', $aniversariantesAmanha[0]));
+        sendMessage('Aniversariante(s) de amanhã (' . date("d/m", strtotime("+1 day")) . '): ' . implode(', ', $aniversariantesAmanha[0]));
     } else {
         sendMessage('Ninguém fará aniversário amanhã (' . date("d/m", strtotime("+1 day")) . ').');
     }
