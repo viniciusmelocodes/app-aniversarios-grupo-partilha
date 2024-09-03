@@ -2,7 +2,7 @@
 
 ## Cron job para aniversariantes de hoje: 
 ```bash
-0 10 * * * php ~/dev/app-aniversarios-grupo-partilha/index.php hoje
+0 5 * * * php ~/dev/app-aniversarios-grupo-partilha/index.php hoje
 ```
 
 ## Cron job para aniversariantes de amanhã: 
