@@ -1,6 +1,6 @@
 <?php
 
-$aniversarios = [
+$aniversariosOvelhasBia = [
     "02/01" => ["Ikaro"],
     "19/01" => ["Júlia"],
     "22/01" => ["Daniel"],
@@ -28,6 +28,7 @@ $aniversarios = [
     "30/08" => ["Rodrigo Almeida"],
     "09/09" => ["Fábio Siqueira"],
     "18/09" => ["Dayane"],
+    "14/10" => ["Dona Terezinha"],
     "25/11" => ["Igor"],
     "09/12" => ["Ricardo"],
 ];
@@ -82,9 +83,10 @@ $aniversariosOvelhasMarielly = [
 $opcaoAniversariantes = $argv[1];
 
 if ($opcaoAniversariantes == 'hoje') {
+    // Ovelhas Bia
     $aniversariantesHoje = [];
 
-    foreach ($aniversarios as $data => $nome) {
+    foreach ($aniversariosOvelhasBia as $data => $nome) {
         if ($data == date("d/m")) {
             $aniversariantesHoje[] = $nome;
         }
@@ -97,6 +99,7 @@ if ($opcaoAniversariantes == 'hoje') {
     }
 
     // Ovelhas Marielly
+    sleep(10);
     $aniversariantesHoje = [];
 
     foreach ($aniversariosOvelhasMarielly as $data => $nome) {
@@ -111,9 +114,10 @@ if ($opcaoAniversariantes == 'hoje') {
         sendMessage('Ninguém faz aniversário hoje (' . date("d/m") . ').', 2);
     }
 } elseif ($opcaoAniversariantes == 'amanha') {
+    // Ovelhas Bia
     $aniversariantesAmanha = [];
 
-    foreach ($aniversarios as $data => $nome) {
+    foreach ($aniversariosOvelhasBia as $data => $nome) {
         if ($data == date("d/m", strtotime("+1 day"))) {
             $aniversariantesAmanha[] = $nome;
         }
@@ -126,6 +130,7 @@ if ($opcaoAniversariantes == 'hoje') {
     }
 
     // Ovelhas Marielly
+    sleep(10);
     $aniversariantesAmanha = [];
 
     foreach ($aniversariosOvelhasMarielly as $data => $nome) {
