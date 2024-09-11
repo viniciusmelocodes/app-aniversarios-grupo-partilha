@@ -14,7 +14,7 @@ $aniversarios = [
     "19/03" => ["Edson Pastor"],
     "22/03" => ["Lucas (Maria Helena)"],
     "26/03" => ["Maria Luiza (Bia)"],
-    "03/04" => ["Bianca (Vanessa)"],
+    "03/04" => ["Bianca (Vanessa)", "Letícia"],
     "16/04" => ["Beatriz (Vanessa)"],
     "19/04" => ["Angelita"],
     "08/06" => ["Rodrigo Leão (Rayane)"],
@@ -28,6 +28,7 @@ $aniversarios = [
     "30/08" => ["Rodrigo Almeida"],
     "09/09" => ["Fábio Siqueira"],
     "18/09" => ["Dayane"],
+    "25/11" => ["Igor"],
     "09/12" => ["Ricardo"],
 ];
 
