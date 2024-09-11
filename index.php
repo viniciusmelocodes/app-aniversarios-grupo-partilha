@@ -36,6 +36,7 @@ $aniversariosOvelhasMarielly = [
     "05/01" => ["Adrian - Renato"],
     "07/01" => ["Analuze"],
     "29/01" => ["Divilmar"],
+    "10/02" => ["Maria Vitória Lady"],
     "16/02" => ["José Miguel do Reiner"],
     "27/02" => ["David do Divilmar"],
     "13/03" => ["Marielly"],
@@ -49,12 +50,14 @@ $aniversariosOvelhasMarielly = [
     "07/05" => ["Thiago"],
     "13/05" => ["Maria Júlia do Katatau"],
     "15/05" => ["Valney (Katatau)"],
+    "31/05" => ["João Henrique"],
     "09/06" => ["Aurora do Vinicius"],
     "10/06" => ["Miguel do Tiago"],
     "11/06" => ["Marcela", "Pricila"],
     "13/06" => ["Letícia"],
     "19/06" => ["Alice Hellena do Renato"],
     "30/06" => ["Robson", "Marcos M. Diniz"],
+    "06/07" => ["Maria Luíza Lady"],
     "22/07" => ["Vinicius"],
     "23/07" => ["Marcos"],
     "25/07" => ["Miguel (Andréia e Robson)"],
@@ -68,6 +71,7 @@ $aniversariosOvelhasMarielly = [
     "21/09" => ["Aline"],
     "30/09" => ["Nathallia Aguiar"],
     "04/10" => ["Angela"],
+    "08/10" => ["Luciana Lady"],
     "18/10" => ["Karlene"],
     "25/11" => ["Reiner", "Maria Sophia do Elton"],
     "12/12" => ["Djalma Neto do Elton"],
@@ -179,8 +183,8 @@ function sendMessage($message, $pastora = 1)
 
         case 2:
             // Marielly
-            $phone = '+556283156636';
-            $apikey = '225716';
+            $phone = '+556285939460';
+            $apikey = '7161252';
 
             $url = 'https://api.callmebot.com/whatsapp.php?source=php&phone=' . $phone . '&text=' . urlencode($message) . '&apikey=' . $apikey;
             file_get_contents($url);
